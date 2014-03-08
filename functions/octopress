@@ -1,0 +1,13 @@
+# In your local Octpress root
+# Usage: blog_preview
+# Description: preview your current octpress site
+function blog_preview(){
+  rake clean && rake preview
+}
+
+# In your local Octpress root
+# Usage: blog_deploy
+# Description: preview your current octpress site
+function blog_deploy(){
+  rake generate && rake deploy
+}
