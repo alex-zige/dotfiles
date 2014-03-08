@@ -19,3 +19,8 @@ alias gb='git branch'
 alias gs='git status -sb' # upgrade your git if -sb breaks for you. it's fun.
 alias grm="git status | grep deleted | awk '{\$1=\$2=\"\"; print \$0}' | \
            perl -pe 's/^[ \t]*//' | sed 's/ /\\\\ /g' | xargs git rm"
+
+alias gitfix='git ci --amend -m'
+alias unchanged='git update-index --assume-unchanged'
+alias changed='git update-index --no-assume-unchanged'
+alias deploy_kaitown_staging='git push && rake kaitown:deploy'
