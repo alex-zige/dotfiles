@@ -1,0 +1,20 @@
+# Title: Create pull request to github
+# Usage: pr staging
+# Description:  Push your current branch to github, create a pull request against the branch
+
+function pr () {
+  local repo=`git remote -v | grep "origin" | grep -m 1 "(push)" | sed -e "s/.*github.com[:/]\(.*\)\.git.*/\1/"`
+  local branch=`git name-rev --name-only HEAD`
+  echo "... pushing current branch \"$branch\" in \"$repo\" to github" &&
+  $(git push origin $branch) &&
+  echo "... push succeed" &&
+  target_branch=$1
+  echo "... creating pull request for branch \"$branch\" in \"$repo\"" &&
+  if [[ ! -z $target_branch ]]; then
+    open https://github.com/$repo/pull/new/$target_branch...$branch
+  else
+    open https://github.com/$repo/pull/new/$branch
+  fi
+}
+
+export -f pr
