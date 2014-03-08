@@ -1,0 +1,3 @@
+shutmedown(){
+  sudo shutdown -h now
+}
