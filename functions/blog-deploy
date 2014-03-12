@@ -1,0 +1,5 @@
+# Usage: blog_deploy
+# Description: In your local Octopress root, deploy your current octpress site to github
+blog-deploy () {
+  rake generate && rake deploy
+}

@@ -1,0 +1,5 @@
+# Usage: blog_preview
+# Description:  In your local Octopress root, preview your current octpress site
+blog-preview () {
+  rake clean && rake preview
+}
