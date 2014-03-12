@@ -9,3 +9,15 @@ export PATH=/usr/local/bin:$PATH
 
 export PATH=$PATH:/Applications/AWS-ElasticBeanstalk-CLI-2.3/eb/linux/python2.7/
 export PATH=$PATH:/usr/local/share/npm/bin/
+
+#Open bundle gem
+export BUNDLER_EDITOR=subl
+
+#MAMP
+export PATH=/Applications/MAMP/bin/php/php5.3.6/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin
+homebrew=/usr/local/bin:/usr/local/sbin
+
+
+# Add RVM to PATH for scripting
+export PATH=$PATH:$HOME/
+export PATH=$PATH:$HOME/.rvm/bin
