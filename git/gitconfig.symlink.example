@@ -18,18 +18,17 @@
   promote = !$ZSH/bin/git-promote
   wtf     = !$ZSH/bin/git-wtf
   rank-contributors = !$ZSH/bin/git-rank-contributors
-  count   = !git shortlog -sn
   br = branch
   ci = commit
   st = status
   unstage = reset HEAD --
   last = log -1 HEAD
   hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
-      undo = reset --soft HEAD^
-      who = shortlog -sn
-      amend = commit --amend -C HEAD
-  exclude = !sh -c 'echo "$1" >> .git/info/exclude' -
-
+  undo = !$ZSH/bin/git-undo
+  who = shortlog -sn
+  amend = !$ZSH/bin/git-amend
+  rm-local-merged-br = !$ZSH/bin/git-delete-local-merged
+  credit = !$ZSH/bin/git-credit
 [push]
   default = current
 [difftool "sourcetree"]
