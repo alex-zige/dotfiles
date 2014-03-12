@@ -17,3 +17,5 @@ function title() {
   esac
 }
 
+#set title
+function st { title=$1; echo -e "\033];${title}\007"; }
