@@ -6,6 +6,12 @@ then
   alias git=$hub_path
 fi
 
+github_path=$(which github)
+if (( $+commands[github] ))
+then
+  alias gh=$github_path
+fi
+
 # The rest of my fun git aliases
 alias gl='git pull --prune'
 alias glog="git log --graph --pretty=format:'%Cred%h%Creset %an: %s - %Creset %C(yellow)%d%Creset %Cgreen(%cr)%Creset' --abbrev-commit --date=relative"
@@ -23,4 +29,3 @@ alias grm="git status | grep deleted | awk '{\$1=\$2=\"\"; print \$0}' | \
 alias gitfix='git ci --amend -m'
 alias unchanged='git update-index --assume-unchanged'
 alias changed='git update-index --no-assume-unchanged'
-alias deploy_kaitown_staging='git push && rake kaitown:deploy'
