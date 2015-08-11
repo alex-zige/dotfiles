@@ -12,7 +12,6 @@
   editor = subl -w
   excludesfile = /Users/alex/.gitignore_global
 [diff]
-    external = /Users/alex/scripts/gitdfdiff.sh
 [alias]
   co = checkout
   promote = !$ZSH/bin/git-promote
