@@ -1,10 +1,11 @@
 # shortcut to this dotfiles path is $ZSH
 export ZSH=$HOME/.dotfiles
+export RACK_ENV=development
 
 # your project folder that we can `c [tab]` to
 export PROJECTS=~/Sites
 
-# Export Docker Host using boot2docker  
+# Export Docker Host using boot2docker
 export DOCKER_HOST=tcp://localhost:4243
 
 # use .localrc for SUPER SECRET CRAP that you don't
