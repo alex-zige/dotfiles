@@ -21,3 +21,6 @@ homebrew=/usr/local/bin:/usr/local/sbin
 # Add RVM to PATH for scripting
 export PATH=$PATH:$HOME/
 export PATH=$PATH:$HOME/.rvm/bin
+
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
