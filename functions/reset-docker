@@ -1,0 +1,3 @@
+set-docker() {
+  eval "$(docker-machine env default)"
+}
