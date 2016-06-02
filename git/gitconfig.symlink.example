@@ -6,6 +6,9 @@
 [user]
   name = AUTHORNAME
   email = AUTHOREMAIL
+  signingkey = FA97A147
+[commit]
+  gpgsign = true
 [credential]
   helper = GIT_CREDENTIAL_HELPER
 [core]
