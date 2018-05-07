@@ -5,9 +5,6 @@ export RACK_ENV=development
 # your project folder that we can `c [tab]` to
 export PROJECTS=~/Sites
 
-# Export Docker Host using boot2docker
-export DOCKER_HOST=tcp://localhost:4243
-
 # use .localrc for SUPER SECRET CRAP that you don't
 # want in your public, versioned repo.
 if [[ -a ~/.localrc ]]
